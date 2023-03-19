@@ -23,7 +23,7 @@ export class MediaController {
     @Get()
     async findAll(
             @Query('page') page: number,
-            @Query('limit') limit: number,
+            @Query('perPage') limit: number,
             @Res() res: Response
         ): Promise<Pagination<Media>> {
         limit = limit > 100 ? 100 : limit;

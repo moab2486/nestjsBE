@@ -25,6 +25,27 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Query Endpoints
+
+● POST localhost:5000/media
+  Create a new media object
+
+● GET localhost:5000/media?page=1&perPage=12
+  Fetch a paginated list of existing media objects
+
+● GET localhost:5000/media/:id
+  Fetch a single media by id
+
+● GET localhost:5000/media/search?query=xyz
+  Search media by name and description
+
+● PATCH localhost:5000/media/:id
+  Update an existing media by id. This endpoint should only accept changes to the status field.
+
+● DELETE localhost:5000/media/:id
+  Soft delete a media item by id.
+
+
 ## Stay in touch
 
 - Author - [Abdulkadir Abdulrasak](https://www.linkedin.com/in/abdulkadir-5769/)
